@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         guard let welcomeVc = segue.destination as? WelcomeViewController else { return }
         welcomeVc.user = enter.nameUser
         let tabBarController = segue.destination as! UITabBarController
-        
     }
     
     @IBAction func logIn() {
@@ -64,7 +63,6 @@ extension  ViewController: UITextFieldDelegate {
             password.becomeFirstResponder()
         } else {
             logIn()
-            performSegue(withIdentifier: "oneSegue", sender: nil)
         }
         
         return true
