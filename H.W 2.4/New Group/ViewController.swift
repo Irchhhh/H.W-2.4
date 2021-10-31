@@ -63,6 +63,7 @@ extension  ViewController: UITextFieldDelegate {
             password.becomeFirstResponder()
         } else {
             logIn()
+            performSegue(withIdentifier: "oneSegue", sender: nil)
         }
         
         return true
